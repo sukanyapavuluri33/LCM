@@ -1,0 +1,22 @@
+#include<stdio.h>
+int lcm(int, int) ;
+int main() {
+int a, b;
+printf("input first number:") ;
+scanf("%d", &a) ;
+printf("input second number:") ;
+scanf("%d", &b) ;
+int c=lcm(a, b) ;
+printf("LCM of %d and %d is:%d", a, b, c) ;
+return 0;
+}
+int lcm(int p, int q) {
+   static int r=1;
+if(r%p==0&&r%q==0) {
+return r;
+}
+r++;
+lcm(a, b) ;
+return r;
+}
+
